@@ -1,0 +1,1 @@
+This assigment utilizes testing of Ruby code, to see if it fails or passes. Both fails and passes are intentionally done to learn more about coding in Ruby.
