@@ -3,7 +3,7 @@ require "minitest/autorun"
 # Use the file that will be tested
 require_relative "tdd_fizzbuzz.rb"
 
-# Test the Testtdd_fizz
+# Test the Testtdd_fizzbuzz.rb
 class TestTddFizzBuzz < Minitest::Test
 
     def test_assert_that_1_equals_1
@@ -16,5 +16,11 @@ class TestTddFizzBuzz < Minitest::Test
 
     def test_assert_array_length_is_100
         assert_equal(100, fizzbuzz().length)
+    end
+    def test_assert_first_position_is_1
+        assert_equal(1, fizzbuzz().first)
+    end
+    def test_assert_third_position_is_mined
+        assert_equal(mined, fizzbuzz()[3])
     end
  end
