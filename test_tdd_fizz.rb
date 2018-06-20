@@ -12,4 +12,13 @@ class TestTdd_fizz < Minitest::Test
     def test_result_is_array
     	assert_equal(Array, fizzbuzz().class)
     end
+    def test_array_length_is_100
+    	assert_equal(100, fizzbuzz().length)
+    end
+    def test_array_first_element_returns_1
+    	assert_equal(1, fizzbuzz()[0])
+    end
+    def test_array_third_element_returns_mined
+    	assert_equal("mined", fizzbuzz()[2])
+    end
 end
